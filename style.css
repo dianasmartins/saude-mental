@@ -1,10 +1,3 @@
-/* ============================================
-   MENTE EM FOCO — style.css
-   Tema: Saúde Mental nos Jovens
-   Paleta: Verde-azulado escuro + bege cálido + verde menta
-   Tipografia: Playfair Display + DM Sans
-   ============================================ */
-
 /* ---- VARIÁVEIS CSS ---- */
 :root {
     --verde-escuro: #1a3a35;
@@ -483,16 +476,17 @@ ul {
 .mito-card {
     border-radius: var(--raio);
     overflow: hidden;
-    box-shadow: var(--sombra-card);
+    border: 1px solid #e0e0e0;
 }
 
 .mito-top {
-    background: #fff0ee;
+    background: #ffffff;
     padding: 28px;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .mito-bottom {
-    background: #edf7f5;
+    background: #ffffff;
     padding: 28px;
 }
 
