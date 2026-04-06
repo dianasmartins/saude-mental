@@ -5,115 +5,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursos | Saúde Mental nos Jovens</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-        <header>
-        <div class="nav-logo">🧠 Saúde Mental nos Jovens</div>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="detalhes.html">Mais Detalhes</a>
-            <a href="recursos.html" class="ativo">Recursos</a>
-        </nav>
+    <!-- HEADER / NAV -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">Saúde Mental nos Jovens</span>
+            </div>
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="detalhes.html">Mais Detalhes</a></li>
+                    <li><a href="recursos.html" class="active">Recursos</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+        </div>
     </header>
 
     <main>
 
-        <section id="linhas">
-            <h2>Linhas de apoio em Portugal</h2>
-            <p>Se precisas de falar com alguém agora, estas linhas estão disponíveis:</p>
-            <ul>
-                <li>
-                    <strong>SOS Voz Amiga — 213 544 545</strong><br>
-                    Apoio emocional e prevenção do suicídio. Confidencial e gratuita. Todos os dias das 16h às 24h.
-                </li>
-                <li>
-                    <strong>SNS 24 — 808 24 24 24</strong><br>
-                    Linha de aconselhamento de saúde do SNS, incluindo apoio em saúde mental. Disponível 24 horas por dia.
-                </li>
-                <li>
-                    <strong>Linha de Apoio Psicológico — 800 202 190</strong><br>
-                    Apoio psicológico especializado prestado por psicólogos do Ministério da Saúde. Dias úteis das 9h às 20h.
-                </li>
-                <li>
-                    <strong>Conversa Amiga — 808 237 327</strong><br>
-                    Apoio emocional voluntário para situações de crise e dificuldade emocional. Todos os dias das 15h às 22h.
-                </li>
-            </ul>
-        </section>
-
-        <section id="sites">
-            <h2>Sites e organizações úteis</h2>
-            <ul>
-                <li>
-                    <a href="https://www.dgs.pt/saude-mental.aspx" target="_blank">DGS — Saúde Mental</a>
-                    — Informação oficial sobre saúde mental em Portugal, programas e recursos.
-                </li>
-                <li>
-                    <a href="https://www.ordemdospsicologos.pt" target="_blank">Ordem dos Psicólogos Portugueses</a>
-                    — Encontra um psicólogo certificado perto de ti. Base de dados nacional de profissionais.
-                </li>
-                <li>
-                    <a href="https://www.who.int/mental_health" target="_blank">OMS — Saúde Mental</a>
-                    — Relatórios, estatísticas globais e campanhas internacionais sobre saúde mental.
-                </li>
-                <li>
-                    <a href="https://www.mentalhealth.org.uk" target="_blank">Mental Health Foundation</a>
-                    — Guias práticos e artigos sobre saúde mental para jovens e adultos (em inglês).
-                </li>
-            </ul>
-        </section>
-
-        <section id="videos">
-            <h2>Vídeos recomendados</h2>
-            <ul>
-                <li>
-                    <a href="https://www.ted.com/talks/andrew_solomon_depression_the_secret_we_share" target="_blank">
-                        TED Talk: "Depression, the secret we share" — Andrew Solomon
-                    </a>
-                    — Uma das TED Talks mais vistas sobre depressão. Profunda, humana e esclarecedora.
-                </li>
-                <li>
-                    <a href="https://www.netflix.com/title/81097769" target="_blank">
-                        "The Mind, Explained" — Netflix
-                    </a>
-                    — Série documental que explora ansiedade, memória, sonhos e meditação de forma acessível.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=WWloIAQpMcQ" target="_blank">
-                        "Como lidar com a ansiedade" — YouTube
-                    </a>
-                    — Vídeo prático em português sobre como gerir ansiedade e stress no dia a dia.
-                </li>
-            </ul>
-
-            <!-- Vídeo incorporado -->
-            <h3>TED Talk: Andrew Solomon sobre depressão</h3>
-            <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px; margin-top:12px;">
-                <iframe
-                    src="https://www.youtube.com/embed/zbwMYHGSIgQ"
-                    title="Andrew Solomon - Depression the secret we share"
-                    style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;"
-                    allowfullscreen>
-                </iframe>
+        <!-- PAGE HERO -->
+        <section class="page-hero" aria-label="Cabeçalho da página">
+            <div class="container">
+                <span class="section-label light">Não estás sozinho/a</span>
+                <h1>Recursos de apoio<br>à saúde mental</h1>
+                <p class="page-hero-sub">Linhas de crise, organizações, vídeos e ferramentas para te ajudar a ti ou a alguém que conheces.</p>
             </div>
         </section>
 
-        <section id="apps">
-            <h2>Apps de bem-estar mental</h2>
-            <ul>
-                <li><strong>Headspace</strong> — Meditação guiada e mindfulness para reduzir o stress e melhorar o sono.</li>
-                <li><strong>Daylio</strong> — Diário de humor que te ajuda a identificar padrões emocionais e monitorizar o teu bem-estar.</li>
-                <li><strong>Calm</strong> — Histórias para dormir, músicas relaxantes e exercícios de respiração para momentos de ansiedade.</li>
-                <li><strong>Sleep Cycle</strong> — Monitoriza os teus padrões de sono e acorda-te no momento ideal para te sentires mais descansado/a.</li>
-            </ul>
+        <!-- LINHAS DE APOIO -->
+        <section class="section-linhas" aria-labelledby="linhas-title">
+            <div class="container">
+                <h2 id="linhas-title">Linhas de apoio em Portugal</h2>
+                <p class="section-intro-text">Se precisas de falar com alguém agora, estas linhas estão disponíveis:</p>
+
+                <div class="linhas-grid">
+                    <article class="linha-card" aria-label="SOS Voz Amiga">
+                        <div class="linha-header">
+                            <span class="linha-emoji">📞</span>
+                            <div>
+                                <h3>SOS Voz Amiga</h3>
+                                <span class="linha-horario">Todos os dias — 16h às 24h</span>
+                            </div>
+                        </div>
+                        <p>Linha de apoio emocional e prevenção do suicídio. Confidencial e gratuita.</p>
+                        <a href="tel:213544545" class="btn-linha">213 544 545</a>
+                    </article>
+
+                    <article class="linha-card" aria-label="SNS 24">
+                        <div class="linha-header">
+                            <span class="linha-emoji">🏥</span>
+                            <div>
+                                <h3>SNS 24</h3>
+                                <span class="linha-horario">24 horas por dia, todos os dias</span>
+                            </div>
+                        </div>
+                        <p>Linha de aconselhamento de saúde do SNS, incluindo apoio em saúde mental.</p>
+                        <a href="tel:808242424" class="btn-linha">808 24 24 24</a>
+                    </article>
+
+                    <article class="linha-card" aria-label="Linha de Apoio à Saúde Mental">
+                        <div class="linha-header">
+                            <span class="linha-emoji">💬</span>
+                            <div>
+                                <h3>Linha de Apoio Psicológico</h3>
+                                <span class="linha-horario">Dias úteis — 9h às 20h</span>
+                            </div>
+                        </div>
+                        <p>Apoio psicológico especializado prestado por psicólogos do Ministério da Saúde.</p>
+                        <a href="tel:800202190" class="btn-linha">800 202 190</a>
+                    </article>
+
+                    <article class="linha-card" aria-label="Conversa Amiga">
+                        <div class="linha-header">
+                            <span class="linha-emoji">🤝</span>
+                            <div>
+                                <h3>Conversa Amiga</h3>
+                                <span class="linha-horario">Todos os dias — 15h às 22h</span>
+                            </div>
+                        </div>
+                        <p>Apoio emocional voluntário para situações de crise e dificuldade emocional.</p>
+                        <a href="tel:808237327" class="btn-linha">808 237 327</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ORGANIZAÇÕES E SITES -->
+        <section class="section-orgs" aria-labelledby="orgs-title">
+            <div class="container">
+                <span class="section-label">Referências</span>
+                <h2 id="orgs-title">Organizações e sites úteis</h2>
+                <div class="orgs-grid">
+
+                    <a href="https://www.dgs.pt/saude-mental.aspx" target="_blank" rel="noopener" class="org-card" aria-label="DGS - Saúde Mental">
+                        <span class="org-icon">🏛️</span>
+                        <div>
+                            <h3>DGS — Saúde Mental</h3>
+                            <p>Direção-Geral da Saúde. Informação oficial sobre saúde mental em Portugal, programas e recursos.</p>
+                        </div>
+                        <span class="org-arrow">→</span>
+                    </a>
+
+                    <a href="https://www.ordemdospsicologos.pt" target="_blank" rel="noopener" class="org-card" aria-label="Ordem dos Psicólogos Portugueses">
+                        <span class="org-icon">🎓</span>
+                        <div>
+                            <h3>Ordem dos Psicólogos</h3>
+                            <p>Encontra um psicólogo certificado perto de ti. Base de dados nacional de profissionais.</p>
+                        </div>
+                        <span class="org-arrow">→</span>
+                    </a>
+
+                    <a href="https://www.who.int/mental_health" target="_blank" rel="noopener" class="org-card" aria-label="OMS - Saúde Mental">
+                        <span class="org-icon">🌍</span>
+                        <div>
+                            <h3>OMS — Saúde Mental</h3>
+                            <p>Organização Mundial de Saúde. Relatórios, estatísticas globais e campanhas internacionais.</p>
+                        </div>
+                        <span class="org-arrow">→</span>
+                    </a>
+
+                    <a href="https://www.mentalhealth.org.uk" target="_blank" rel="noopener" class="org-card" aria-label="Mental Health Foundation">
+                        <span class="org-icon">💚</span>
+                        <div>
+                            <h3>Mental Health Foundation</h3>
+                            <p>Guias práticos, artigos e recursos sobre saúde mental para jovens e adultos (em inglês).</p>
+                        </div>
+                        <span class="org-arrow">→</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- VÍDEOS RECOMENDADOS -->
+        <section class="section-videos" aria-labelledby="videos-title">
+            <div class="container">
+                <h2 id="videos-title">Vídeos e documentários recomendados</h2>
+                <div class="videos-grid">
+
+                    <article class="video-card" aria-label="Vídeo TED sobre depressão">
+                        <div class="video-thumb" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                            <span class="play-btn">▶</span>
+                            <span class="video-badge">TED Talk</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>"O que é a depressão?" — Andrew Solomon</h3>
+                            <p>Uma das TED Talks mais vistas sobre depressão. Profunda, humana e esclarecedora.</p>
+                            <a href="https://www.ted.com/talks/andrew_solomon_depression_the_secret_we_share" target="_blank" rel="noopener" class="link-externo">Ver no TED.com →</a>
+                        </div>
+                    </article>
+
+                    <article class="video-card" aria-label="Documentário sobre ansiedade">
+                        <div class="video-thumb" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                            <span class="play-btn">▶</span>
+                            <span class="video-badge">Documentário</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>"The Mind, Explained" — Netflix</h3>
+                            <p>Série da Netflix que explora ansiedade, memória, sonhos e meditação de forma acessível.</p>
+                            <a href="https://www.netflix.com/title/81097769" target="_blank" rel="noopener" class="link-externo">Ver na Netflix →</a>
+                        </div>
+                    </article>
+
+                    <article class="video-card" aria-label="Vídeo sobre saúde mental nos jovens">
+                        <div class="video-thumb" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                            <span class="play-btn">▶</span>
+                            <span class="video-badge">YouTube</span>
+                        </div>
+                        <div class="video-info">
+                            <h3>"Como lidar com a ansiedade" — Canal Psicologia</h3>
+                            <p>Vídeos práticos em português sobre como gerir ansiedade e stress no dia a dia.</p>
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener" class="link-externo">Ver no YouTube →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- APPS E FERRAMENTAS -->
+        <section class="section-apps" aria-labelledby="apps-title">
+            <div class="container">
+                <span class="section-label">Ferramentas digitais</span>
+                <h2 id="apps-title">Apps de bem-estar mental</h2>
+                <div class="apps-grid">
+                    <div class="app-card">
+                        <span class="app-icon">🧘</span>
+                        <h3>Headspace</h3>
+                        <p>Meditação guiada e técnicas de mindfulness para reduzir o stress e melhorar o sono.</p>
+                        <span class="app-tag">Meditação</span>
+                    </div>
+                    <div class="app-card">
+                        <span class="app-icon">📓</span>
+                        <h3>Daylio</h3>
+                        <p>Diário de humor que te ajuda a identificar padrões emocionais e monitorizar o teu bem-estar.</p>
+                        <span class="app-tag">Diário de humor</span>
+                    </div>
+                    <div class="app-card">
+                        <span class="app-icon">😴</span>
+                        <h3>Sleep Cycle</h3>
+                        <p>Monitoriza os teus padrões de sono e acorda-te no momento ideal para te sentires mais descansado/a.</p>
+                        <span class="app-tag">Sono</span>
+                    </div>
+                    <div class="app-card">
+                        <span class="app-icon">🌿</span>
+                        <h3>Calm</h3>
+                        <p>Histórias para dormir, músicas relaxantes e exercícios de respiração para momentos de ansiedade.</p>
+                        <span class="app-tag">Relaxamento</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>Saúde Mental nos Jovens &mdash; Trabalho de Programação de Sistemas Web &mdash; 2026</p>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav aria-label="Links do rodapé">
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="detalhes.html">Mais Detalhes</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                </ul>
+            </nav>
+            <p class="footer-note">Universidade Atlântica — GSC — Programação de Sistemas Web 2026</p>
+        </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('open');
+        }
+    </script>
 
 </body>
 </html>
