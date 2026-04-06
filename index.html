@@ -5,85 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saúde Mental nos Jovens</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Playfair Display + DM Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-        <header>
-        <div class="nav-logo">🧠 Saúde Mental nos Jovens</div>
-        <nav>
-            <a href="index.html" class="ativo">Início</a>
-            <a href="detalhes.html">Mais Detalhes</a>
-            <a href="recursos.html">Recursos</a>
-        </nav>
+    <!-- HEADER / NAV -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">Saúde Mental nos Jovens</span>
+            </div>
+            <!-- Menu de navegação semântico -->
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="detalhes.html">Mais Detalhes</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                </ul>
+            </nav>
+            <!-- Botão hamburguer para mobile -->
+            <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+        </div>
     </header>
 
     <main>
 
-        <!-- Imagem de destaque -->
-        <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=900&q=80"
-             alt="Jovem a refletir sobre saúde mental"
-             style="width:100%; max-height:360px; object-fit:cover; border-radius:8px; margin-bottom:40px;">
-
-        <section id="introducao">
-            <h2>O que é a Saúde Mental?</h2>
-            <p>
-                A saúde mental é uma parte essencial da nossa saúde geral. Segundo a <strong>Organização Mundial de Saúde (OMS)</strong>,
-                saúde mental é um estado de bem-estar em que cada pessoa consegue lidar com o stress normal da vida,
-                trabalhar de forma produtiva e contribuir para a sua comunidade.
-            </p>
-            <p>
-                Tal como cuidamos do corpo, é importante cuidar da mente — especialmente durante a adolescência
-                e juventude, que são fases de grandes mudanças emocionais e sociais.
-            </p>
+        <!-- HERO SECTION -->
+        <section class="hero" aria-label="Introdução ao tema">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <p class="hero-tag">Saúde Mental nos Jovens</p>
+                <h1 class="hero-title">A tua mente<br><em>importa.</em></h1>
+                <p class="hero-subtitle">
+                    Em Portugal, 1 em cada 5 jovens sofre de perturbações mentais. 
+                    Falar sobre isso é o primeiro passo para mudar.
+                </p>
+                <div class="hero-actions">
+                    <a href="detalhes.html" class="btn btn-primary">Saber mais</a>
+                    <a href="recursos.html" class="btn btn-secondary">Pedir ajuda</a>
+                </div>
+            </div>
+            <!-- Decoração visual -->
+            <div class="hero-shape"></div>
         </section>
 
-        <section id="importancia">
-            <h2>Porque é importante?</h2>
-            <p>
-                Em Portugal, estima-se que <strong>1 em cada 5 jovens</strong> sofre de alguma perturbação mental.
-                No entanto, muitos nunca procuram ajuda por medo do estigma social ou por não reconhecerem os sinais.
-            </p>
-            <p>
-                A OMS indica que <strong>75% das perturbações mentais surgem antes dos 25 anos</strong>,
-                o que torna a prevenção e a sensibilização na juventude ainda mais urgentes.
-            </p>
-            <ul>
-                <li>Melhora o desempenho académico e profissional</li>
-                <li>Fortalece as relações com os outros</li>
-                <li>Reduz o risco de doenças físicas associadas ao stress</li>
-                <li>Contribui para uma vida mais equilibrada e feliz</li>
-            </ul>
+        <!-- O QUE É A SAÚDE MENTAL -->
+        <section class="section-intro" aria-labelledby="oque-title">
+            <div class="container two-col">
+                <div class="col-text">
+                    <span class="section-label">O que é?</span>
+                    <h2 id="oque-title">Saúde mental não é só a ausência de doença</h2>
+                    <p>
+                        Segundo a Organização Mundial de Saúde, a saúde mental é um estado de bem-estar 
+                        em que cada indivíduo realiza o seu potencial, consegue lidar com o stress normal 
+                        da vida, trabalha de forma produtiva e contribui para a sua comunidade.
+                    </p>
+                    <p>
+                        Tal como cuidamos do corpo, precisamos de cuidar da mente — especialmente 
+                        na adolescência e juventude, fases de grandes transformações emocionais e sociais.
+                    </p>
+                </div>
+                <!-- Cartão com estatística destaque -->
+                <div class="col-stat">
+                    <div class="stat-card">
+                        <span class="stat-number">75%</span>
+                        <span class="stat-desc">das perturbações mentais surgem antes dos 25 anos</span>
+                        <span class="stat-source">— OMS, 2023</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="mitos">
-            <h2>Mitos sobre saúde mental</h2>
-            <p>Existem muitos mitos que dificultam que os jovens peçam ajuda. É importante desmistificá-los:</p>
-            <ul>
-                <li><strong>Mito:</strong> "Problemas mentais são uma fraqueza." — <em>Realidade: São condições de saúde como qualquer outra.</em></li>
-                <li><strong>Mito:</strong> "Os jovens só querem atenção." — <em>Realidade: A dor emocional é real e deve ser levada a sério.</em></li>
-                <li><strong>Mito:</strong> "Terapia é só para casos graves." — <em>Realidade: Qualquer pessoa pode e deve procurar apoio psicológico.</em></li>
-            </ul>
+        <!-- ESTATÍSTICAS -->
+        <section class="section-stats" aria-labelledby="stats-title">
+            <div class="container">
+                <span class="section-label light">Números que importam</span>
+                <h2 id="stats-title">A realidade dos jovens em Portugal</h2>
+                <!-- Grid de estatísticas -->
+                <div class="stats-grid">
+                    <article class="stat-item">
+                        <span class="stat-big">1 em 5</span>
+                        <p>jovens portugueses tem uma perturbação mental diagnosticada</p>
+                    </article>
+                    <article class="stat-item">
+                        <span class="stat-big">40%</span>
+                        <p>dos estudantes universitários reportam sintomas de ansiedade elevada</p>
+                    </article>
+                    <article class="stat-item">
+                        <span class="stat-big">60%</span>
+                        <p>nunca procurou ajuda profissional por receio do estigma social</p>
+                    </article>
+                    <article class="stat-item">
+                        <span class="stat-big">2×</span>
+                        <p>aumento de casos de depressão em jovens após a pandemia de COVID-19</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <!-- Vídeo incorporado -->
-        <section id="video">
-            <h2>Vídeo: O que é a saúde mental?</h2>
-            <p>Este vídeo da OMS explica de forma simples o que é a saúde mental e porque devemos falar sobre ela:</p>
-            <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px; margin-top:16px;">
-                <iframe
-                    src="https://www.youtube.com/embed/3QIfkeA6HBY"
-                    title="O que é a saúde mental - OMS"
-                    style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;"
-                    allowfullscreen>
-                </iframe>
+        <!-- DESMISTIFICAR O ESTIGMA -->
+        <section class="section-mitos" aria-labelledby="mitos-title">
+            <div class="container">
+                <span class="section-label">Vamos falar claro</span>
+                <h2 id="mitos-title">Mitos vs. Realidade</h2>
+                <div class="mitos-grid">
+                    <!-- Cartões mito/realidade -->
+                    <div class="mito-card">
+                        <div class="mito-top">
+                            <span class="tag mito">Mito</span>
+                            <p>"Problemas de saúde mental são fraqueza."</p>
+                        </div>
+                        <div class="mito-bottom">
+                            <span class="tag real">Realidade</span>
+                            <p>São condições de saúde, como a diabetes ou a asma. Pedir ajuda é um ato de coragem.</p>
+                        </div>
+                    </div>
+                    <div class="mito-card">
+                        <div class="mito-top">
+                            <span class="tag mito">Mito</span>
+                            <p>"Os jovens só estão à procura de atenção."</p>
+                        </div>
+                        <div class="mito-bottom">
+                            <span class="tag real">Realidade</span>
+                            <p>A dor emocional é real e válida. Ignorar sinais de alerta pode ter consequências graves.</p>
+                        </div>
+                    </div>
+                    <div class="mito-card">
+                        <div class="mito-top">
+                            <span class="tag mito">Mito</span>
+                            <p>"Terapia é só para casos graves."</p>
+                        </div>
+                        <div class="mito-bottom">
+                            <span class="tag real">Realidade</span>
+                            <p>Toda a pessoa beneficia de apoio psicológico. A prevenção é tão importante quanto o tratamento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAMADA À AÇÃO -->
+        <section class="section-cta" aria-label="Chamada à ação">
+            <div class="container cta-content">
+                <h2>Não estás sozinho/a.</h2>
+                <p>Explora os recursos disponíveis, aprende a reconhecer os sinais e descobre como pedir ajuda.</p>
+                <div class="cta-buttons">
+                    <a href="detalhes.html" class="btn btn-primary">Conhecer as perturbações</a>
+                    <a href="recursos.html" class="btn btn-outline">Ver recursos de apoio</a>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>Saúde Mental nos Jovens &mdash; Trabalho de Programação de Sistemas Web &mdash; 2026</p>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <nav aria-label="Links do rodapé">
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="detalhes.html">Mais Detalhes</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                </ul>
+            </nav>
+            <p class="footer-note">Universidade Atlântica — GSC — Programação de Sistemas Web 2026</p>
+        </div>
     </footer>
+
+    <script>
+        // Toggle menu mobile
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('open');
+        }
+    </script>
 
 </body>
 </html>
