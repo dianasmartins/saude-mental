@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mente em Foco | Saúde Mental nos Jovens</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Playfair Display + DM Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER / NAV -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-icon">🧠</span>
+                <span class="logo-text">Mente em Foco</span>
+            </div>
+            <!-- Menu de navegação semântico -->
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="detalhes.html">Mais Detalhes</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                </ul>
+            </nav>
+            <!-- Botão hamburguer para mobile -->
+            <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" aria-label="Introdução ao tema">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <p class="hero-tag">Saúde Mental nos Jovens</p>
+                <h1 class="hero-title">A tua mente<br><em>importa.</em></h1>
+                <p class="hero-subtitle">
+                    Em Portugal, 1 em cada 5 jovens sofre de perturbações mentais. 
+                    Falar sobre isso é o primeiro passo para mudar.
+                </p>
+                <div class="hero-actions">
+                    <a href="detalhes.html" class="btn btn-primary">Saber mais</a>
+                    <a href="recursos.html" class="btn btn-secondary">Pedir ajuda</a>
+                </div>
+            </div>
+            <!-- Decoração visual -->
+            <div class="hero-shape"></div>
+        </section>
+
+        <!-- O QUE É A SAÚDE MENTAL -->
+        <section class="section-intro" aria-labelledby="oque-title">
+            <div class="container two-col">
+                <div class="col-text">
+                    <span class="section-label">O que é?</span>
+                    <h2 id="oque-title">Saúde mental não é só a ausência de doença</h2>
+                    <p>
+                        Segundo a Organização Mundial de Saúde, a saúde mental é um estado de bem-estar 
+                        em que cada indivíduo realiza o seu potencial, consegue lidar com o stress normal 
+                        da vida, trabalha de forma produtiva e contribui para a sua comunidade.
+                    </p>
+                    <p>
+                        Tal como cuidamos do corpo, precisamos de cuidar da mente — especialmente 
+                        na adolescência e juventude, fases de grandes transformações emocionais e sociais.
+                    </p>
+                </div>
+                <!-- Cartão com estatística destaque -->
+                <div class="col-stat">
+                    <div class="stat-card">
+                        <span class="stat-number">75%</span>
+                        <span class="stat-desc">das perturbações mentais surgem antes dos 25 anos</span>
+                        <span class="stat-source">— OMS, 2023</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTATÍSTICAS -->
+        <section class="section-stats" aria-labelledby="stats-title">
+            <div class="container">
+                <span class="section-label light">Números que importam</span>
+                <h2 id="stats-title">A realidade dos jovens em Portugal</h2>
+                <!-- Grid de estatísticas -->
+                <div class="stats-grid">
+                    <article class="stat-item">
+                        <span class="stat-big">1 em 5</span>
+                        <p>jovens portugueses tem uma perturbação mental diagnosticada</p>
+                    </article>
+                    <article class="stat-item">
+                        <span class="stat-big">40%</span>
+                        <p>dos estudantes universitários reportam sintomas de ansiedade elevada</p>
+                    </article>
+                    <article class="stat-item">
+                        <span class="stat-big">60%</span>
+                        <p>nunca procurou ajuda profissional por receio do estigma social</p>
+                    </article>
+                    <article class="stat-item">
+                        <span class="stat-big">2×</span>
+                        <p>aumento de casos de depressão em jovens após a pandemia de COVID-19</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESMISTIFICAR O ESTIGMA -->
+        <section class="section-mitos" aria-labelledby="mitos-title">
+            <div class="container">
+                <span class="section-label">Vamos falar claro</span>
+                <h2 id="mitos-title">Mitos vs. Realidade</h2>
+                <div class="mitos-grid">
+                    <!-- Cartões mito/realidade -->
+                    <div class="mito-card">
+                        <div class="mito-top">
+                            <span class="tag mito">Mito</span>
+                            <p>"Problemas de saúde mental são fraqueza."</p>
+                        </div>
+                        <div class="mito-bottom">
+                            <span class="tag real">Realidade</span>
+                            <p>São condições de saúde, como a diabetes ou a asma. Pedir ajuda é um ato de coragem.</p>
+                        </div>
+                    </div>
+                    <div class="mito-card">
+                        <div class="mito-top">
+                            <span class="tag mito">Mito</span>
+                            <p>"Os jovens só estão à procura de atenção."</p>
+                        </div>
+                        <div class="mito-bottom">
+                            <span class="tag real">Realidade</span>
+                            <p>A dor emocional é real e válida. Ignorar sinais de alerta pode ter consequências graves.</p>
+                        </div>
+                    </div>
+                    <div class="mito-card">
+                        <div class="mito-top">
+                            <span class="tag mito">Mito</span>
+                            <p>"Terapia é só para casos graves."</p>
+                        </div>
+                        <div class="mito-bottom">
+                            <span class="tag real">Realidade</span>
+                            <p>Toda a pessoa beneficia de apoio psicológico. A prevenção é tão importante quanto o tratamento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAMADA À AÇÃO -->
+        <section class="section-cta" aria-label="Chamada à ação">
+            <div class="container cta-content">
+                <h2>Não estás sozinho/a.</h2>
+                <p>Explora os recursos disponíveis, aprende a reconhecer os sinais e descobre como pedir ajuda.</p>
+                <div class="cta-buttons">
+                    <a href="detalhes.html" class="btn btn-primary">Conhecer as perturbações</a>
+                    <a href="recursos.html" class="btn btn-outline">Ver recursos de apoio</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-brand">🧠 Mente em Foco</p>
+            <nav aria-label="Links do rodapé">
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="detalhes.html">Mais Detalhes</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                </ul>
+            </nav>
+            <p class="footer-note">Trabalho académico — Programação de Sistemas Web © 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle menu mobile
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('open');
+        }
+    </script>
+
+</body>
+</html>
